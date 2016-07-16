@@ -3,17 +3,17 @@ Construire son petit BigData Rdf pour faciliter la collaboration
 
 mettre en place un serveur en temps reel
 ----------------------------------------
-> basé sur le chat de [socket.io->https://github.com/socketio/socket.io/tree/master/examples/chat]
 
-recuperer le repertoire "chat" du repertoire example de socket.io
------------------------------------------------------------------
- modifier la ligne 
+
++ recuperer le repertoire "chat" du repertoire example de [socket.io](https://github.com/socketio/socket.io/tree/master/examples/chat)
+
++ dans index.js, modifier la ligne 
 > var io = require('../..')(server);
 
 en 
 
 > var io = require('socket.io')(server);
 
- dans index.js
+ 
 
 
