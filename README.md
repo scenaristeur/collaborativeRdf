@@ -7,13 +7,13 @@ mettre en place un serveur en temps reel
 
 recuperer le repertoire "chat" du repertoire example de socket.io
 -----------------------------------------------------------------
-> modifier la ligne 
->> var io = require('../..')(server);
+ modifier la ligne 
+> var io = require('../..')(server);
 
 en 
 
->> var io = require('socket.io')(server);
+> var io = require('socket.io')(server);
 
-> dans index.js
+ dans index.js
 
 
