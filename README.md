@@ -87,7 +87,9 @@ par
 ```
 
 + Vous devriez maintenant voir quelque chose de ce style
-![apercu rdf socket chat](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+
+
+![apercu rdf socket chat](https://raw.githubusercontent.com/scenaristeur/collaborativeRdf/master/images/socket%20rdf%20chat%20dreamcatcher.png)
 
 + On va maintenant modifier la fonction d'envoi des informations vers le serveur
 ++ dans main.js trouvez les references à  inputMessage (comme var $inputMessage = $('.inputMessage'); // Input message input box)
@@ -97,11 +99,15 @@ et modifiez les pour prendre en compte les nouveaux champs de saisie (sujetInput
 	var $sujetInput = $('.sujetInput'); // Sujet input box
 	var $proprieteInput = $('.proprieteInput'); // propriete input box
 	var $objetInput = $('.objetInput'); // Objet input box
-	```
+```
 	
 + par la même occasion , on va modifier le serveur pour recevoir ce nouveau type d'information
 + Attention, pour que les modifications de index.js (fichier serveur) soient prises en compte, il faut redemarrer le serveur
- 
 
+
+![apercu rdf socket chat](https://raw.githubusercontent.com/scenaristeur/collaborativeRdf/master/images/rdf%20subject%20predicat%20object%20socket%20chat.png)
+
+![apercu rdf socket chat](https://github.com/scenaristeur/collaborativeRdf/blob/master/images/rdf%20owl%20ontology%20chat%20socket%20simple.png)
+ 
 
 
