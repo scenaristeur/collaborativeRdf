@@ -10,7 +10,7 @@ html {
 }
 
 html, input {
-  font-family:
+	font-family:
     "HelveticaNeue-Light",
     "Helvetica Neue Light",
     "Helvetica Neue",
@@ -146,4 +146,40 @@ ul {
   position: absolute;
   right: 0;
   width: 100%;
+}
+
+.sujetInput {
+  border: 10px solid #000;
+  bottom: 0;
+  height: 60px;
+ /* left: 0;*/
+  outline: none;
+  padding-left: 10px;
+ /* position: absolute;*/
+ /* right: 0;*/
+  width: 30%;
+}
+
+.proprieteInput {
+  border: 10px solid #000;
+  bottom: 0;
+  height: 60px;
+ /* left: 0;*/
+  outline: none;
+  padding-left: 10px;
+ /* position: absolute;*/
+ /* right: 0;*/
+  width: 30%;
+}
+
+.objetInput {
+  border: 10px solid #000;
+  bottom: 0;
+  height: 60px;
+ /* left: 0;*/
+  outline: none;
+  padding-left: 10px;
+ /* position: absolute;*/
+ /* right: 0;*/
+  width: 30%;
 }
