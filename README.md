@@ -24,14 +24,18 @@ Mettre en place un serveur en temps reel
 Modification du serveur de chat pour traitement de triplets RDF
 ---------------------------------------------------------------
 
-+ dans *chat/public/*, transformez la ligne *<input class="inputMessage" placeholder="Type here..."/>* en 
++ Dans *chat/public/*, remplacez la ligne
+> <input class="inputMessage" placeholder="Type here..."/>
+
+par 
+
 > <input class="sujetInput" placeholder="Sujet here..."/>
 
-> <input class="objetInput" placeholder="propriete here..."/>
+> <input class="proprieteInput" placeholder="propriete here..."/>
 
-> <input class="proprieteInput" placeholder="Objet here..."/>
+> <input class="objetInput" placeholder="Objet here..."/>
 
-* attention , petite modif, placez ces trois lignes avant la fermeture du </div>*, ce qui devrait vous donner 
+*attention , petite modif, placez ces trois lignes avant la fermeture du </div>*, ce qui devrait vous donner 
 ```
       <div class="chatArea">
         <ul class="messages"></ul>
@@ -43,7 +47,7 @@ Modification du serveur de chat pour traitement de triplets RDF
 
 
 
-+ par la même occasion, modifiez le fichier style.css pour faire entrer nos trois nouveaux champs
++ par la même occasion, modifiez le fichier style.css pour faire entrer nos trois nouveaux champs sur une seule ligne
 ```
 .sujetInput {
   border: 10px solid #000;
@@ -82,9 +86,21 @@ Modification du serveur de chat pour traitement de triplets RDF
 }
 ```
 
++ Vous devriez maintenant voir quelque chose de ce style
+![apercu rdf socket chat](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
 
-
-
++ On va maintenant modifier la fonction d'envoi des informations vers le serveur
+++ dans main.js trouvez les references à  inputMessage (comme var $inputMessage = $('.inputMessage'); // Input message input box)
+et modifiez les pour prendre en compte les nouveaux champs de saisie (sujetInput, proprieteInput et objetInput)
+```
+	// var $inputMessage = $('.inputMessage'); // Input message input box
+	var $sujetInput = $('.sujetInput'); // Sujet input box
+	var $proprieteInput = $('.proprieteInput'); // propriete input box
+	var $objetInput = $('.objetInput'); // Objet input box
+	```
+	
++ par la même occasion , on va modifier le serveur pour recevoir ce nouveau type d'information
++ Attention, pour que les modifications de index.js (fichier serveur) soient prises en compte, il faut redemarrer le serveur
  
 
 
