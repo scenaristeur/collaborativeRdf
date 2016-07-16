@@ -7,6 +7,24 @@ Voir le graphe RDF du projet
 + cliquez dans le graphe pour l'activer et appuyez sur la touche "B", pour réinitialiser le graphe ([liste des commandes de dreamcatcherBeta](http://smag-smag0.rhcloud.com/DreamCatcher/help.html) )
 + sur la gauche, en dessous de "Charger un fichier" cliquez sur le bouton "Select fichiers", et llez chercher l'ontologie précédemment téléchargée. Pour naviguer dans le graphe, utilisez les flèches comme décrit dans la [liste des commandes de dreamcatcherBeta](http://smag-smag0.rhcloud.com/DreamCatcher/help.html)
 
+
+Installer un simple serveur prêt pour la collaboration lors de l'elaboration de graphes RDF : 
+=====================================================
+```
+git clone https://github.com/scenaristeur/collaborativeRdf.git collabRDF
+cd collabRDF
+cd chat
+npm install
+node .
+
+```
++ rendez-vous ensuite à l'adresse [http://127.0.0.1:3000](http://127.0.0.1:3000)
++ vous pouvez aussi vous connecter depuis un ordinateur présent sur votre réseau via http://adresse-ip:3000
+
+
+
+Detail des modifications apportees au serveur de chat proposé par socket.io
+===========================================================================
 Mettre en place un serveur en temps reel
 ----------------------------------------
 
@@ -15,8 +33,11 @@ Mettre en place un serveur en temps reel
 
 + dans index.js, modifiez la ligne *var io = require('../..')(server);* en *var io = require('socket.io')(server);*
 + verifiez le fonctionnement du serveur en temps reel comme préconisé sur la page de l'exemple [socket.io](https://github.com/socketio/socket.io/tree/master/examples/chat): 
+
 > cd chat
+
 > npm install
+
 > node .
 
 + A ce stade vous devriez avoir un serveur de chat opérationnel, on va maintenant le modifier pour qu'il accepte les triplets Rdf
