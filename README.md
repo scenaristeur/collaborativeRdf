@@ -1,5 +1,7 @@
 # collaborativeRdf
-Construire son petit BigData Rdf pour faciliter la collaboration
++ Construire son petit BigData Rdf pour faciliter la collaboration.
++ Evolution : ajout de la visualisation du graphe RDF [CollaborativeRDFWithGraph](https://github.com/scenaristeur/collaborativeRDFWithP5JSGraph) (basé sur p5js, mais d'autres librairies peuvent être utilisées  : Three.js, D3.js, arbor.js...)
+
 Voir le graphe RDF du projet
 ----------------------------
 + téléchargez [l'ontologie du projet](https://github.com/scenaristeur/collaborativeRdf/blob/master/ontologies/dreamcatcher.owl) et gardez-la dans un coin (ce fichier est facilement modifiable avec [Protege Desktop](http://protege.stanford.edu/) 
