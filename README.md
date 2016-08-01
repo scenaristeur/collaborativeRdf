@@ -1,4 +1,5 @@
 # collaborativeRdf
+* for collaborative version see [source](https://scenaristeur.github.io/dreamcatcherAutonome/) 
 + [Documentation](https://github.com/scenaristeur/dreamcatcherAutonome/blob/master/README.md)
 + Construire son petit BigData Rdf pour faciliter la collaboration.
 + Evolution : ajout de la visualisation du graphe RDF [CollaborativeRDFWithGraph](https://github.com/scenaristeur/collaborativeRDFWithP5JSGraph) (basé sur p5js, mais d'autres librairies peuvent être utilisées  : Three.js, D3.js, arbor.js...)
